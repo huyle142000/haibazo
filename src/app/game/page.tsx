@@ -179,6 +179,9 @@ function GamePage() {
                   setIsOver(false);
                   setCurPoint(0);
                   setIsFinish(false);
+                  if (inputRef?.current) {
+                    inputRef.current.value = "0";
+                  }
                 }}
               >
                 Restart
